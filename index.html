@@ -12,33 +12,40 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <video class="wallpaper" autoplay muted loop playsinline aria-hidden="true">
-    <source src="images/wallpaper.mp4" type="video/mp4">
-  </video>
+  <main class="site-main">
+    <section class="profile profile-card" aria-labelledby="profile-name">
+      <header class="profile-header">
+        <div class="portrait-wrap profile-portrait">
+          <img class="portrait" src="images/pfp.jpg" alt="Portrait of jays">
+        </div>
+        <div class="profile-identity">
+          <h1 class="profile-name" id="profile-name">
+            <span class="username" tabindex="0">bsick<span class="uuid-label">UUID: 1</span></span>
+            <span class="owner-badge" tabindex="0" aria-label="Owner">
+              <span aria-hidden="true">♛</span>
+              <span class="owner-tooltip">Owner</span>
+            </span>
+          </h1>
+          <p class="eyebrow profile-role">designer / developer</p>
+        </div>
+      </header>
 
-  <header class="topbar">
-    <div class="wordmark">jays<span> / 001</span></div>
-  </header>
+      <div class="divider profile-divider" aria-hidden="true"></div>
 
-  <main>
-    <section class="profile" aria-labelledby="profile-name">
-      <div class="portrait-wrap">
-        <img class="portrait" src="images/pfp.jpg" alt="Portrait of jays">
+      <div class="profile-details">
+        <p class="bio profile-bio">but i miss you..<br>pls pls pls pls recruit me</p>
       </div>
-      <p class="eyebrow">designer / developer</p>
-      <h1 id="profile-name">bsick</h1>
-      <p class="bio">but i miss you..<br>pls pls pls pls recruit me</p>
-      <div class="divider" aria-hidden="true"></div>
-      <nav class="links" aria-label="Social links">
-        <a href="https://jaysite.info" target="_blank" rel="noreferrer">portfolio</a>
-        <a href="https://github.com/venjae" target="_blank" rel="noreferrer">github</a>
-        <a href="" target="_blank" rel="noreferrer">idk what to put here yet</a>
+
+      <nav class="links profile-links" aria-label="Social links">
+        <ul class="link-list">
+          <li class="link-item"><a href="https://jaysite.info" target="_blank" rel="noreferrer">portfolio</a></li>
+          <li class="link-item"><a href="https://github.com/venjae" target="_blank" rel="noreferrer">github</a></li>
+          <li class="link-item"><a href="" target="_blank" rel="noreferrer">idk what to put here yet</a></li>
+        </ul>
       </nav>
-      <button class="copy-link" type="button" id="copy-link"><span aria-hidden="true">+</span> copy profile link</button>
+
     </section>
   </main>
-
-  <footer>crying about her</footer>
 
   <script src="script.js"></script>
 </body>
